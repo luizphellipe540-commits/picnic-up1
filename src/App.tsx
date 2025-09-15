@@ -6,7 +6,7 @@ function App(): JSX.Element {
   const [play, setPlay] = useState<boolean>(false);
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-[#00825c]">
       {/* Top Bar */}
       <div className="bg-gradient-to-r from-[#ab0101] to-[#5b0202] text-amber-50 py-4 px-4 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#ab0101]/80 to-[#5b0202]/80 backdrop-blur-sm">
