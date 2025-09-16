@@ -5,7 +5,7 @@ function App(): JSX.Element {
   const [mostrarOferta, setMostrarOferta] = useState<boolean>(false);
 
   // tempo em segundos
-  const tempo = 153;
+  const tempo = 160;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -125,20 +125,28 @@ function App(): JSX.Element {
 
                     {/* Buttons */}
                     <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
-                      <button className="group relative overflow-hidden bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-amber-50 font-extrabold py-4 px-8 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-green-500/30">
+                      {/* Botão de Checkout */}
+                      <a
+                        href="https://www.ggcheckout.com/checkout/v2/HGKAg1Rjssvs30Z6jcwf"
+                        className="group relative overflow-hidden bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-amber-50 font-extrabold py-4 px-8 rounded-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-2 border-green-500/30 inline-block"
+                      >
                         <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-green-500/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                         <div className="relative flex items-center justify-center space-x-2">
                           <CheckCircle className="w-5 h-5" />
                           <span>QUERO TEMPLATE MILIONÁRIO</span>
                           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                         </div>
-                      </button>
+                      </a>
 
-                      <button className="group text-red-700/80 hover:text-red-600/90 font-normal py-4 px-8 rounded-xl transition-all duration-300 hover:bg-red-900/30">
+                      {/* Botão de Rejeição */}
+                      <a
+                        href="https://umpicnic-up1dw1.netlify.app"
+                        className="group text-red-700/80 hover:text-red-600/90 font-normal py-4 px-8 rounded-xl transition-all duration-300 hover:bg-red-900/30 inline-block"
+                      >
                         <div className="flex items-center justify-center space-x-2">
                           <span>Eu decidi perder essa oportunidade!</span>
                         </div>
-                      </button>
+                      </a>
                     </div>
 
                     {/* Trust Indicators */}
