@@ -5,7 +5,7 @@ function App(): JSX.Element {
   const [mostrarOferta, setMostrarOferta] = useState<boolean>(false);
 
   // tempo em segundos
-  const tempo = 160;
+  const tempo = 161;
 
   useEffect(() => {
     const timer = setTimeout(() => {
